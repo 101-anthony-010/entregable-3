@@ -16,7 +16,7 @@ const Residents = ({resident}) => {
         <article className='my-6 max-w-xs border-green-500 border'>
         <div className="relative max-w-xs">
             <img src={residentInfo?.image} alt="" className='mx-auto border-green-500 border w-full'/>
-            <h2 className='absolute bottom-0 left-1/4 bg-slate-100/70 m-2 px-6 py-1 text-black border-green-500 border-2 flex gap-3'>
+            <h2 className='absolute bottom-0 left-1/4 bg-slate-950/50 m-2 px-6 py-1 border-green-500 border-2 flex gap-3'>
                 <box-icon type='solid' name='circle' color={residentInfo?.status === 'Dead' ? 'red': residentInfo?.status === 'Alive' ? 'green' : 'gray'}></box-icon>
                 <span className="">{residentInfo?.status}</span>
             </h2>

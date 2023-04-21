@@ -21,7 +21,7 @@ const Content = ({location}) => {
   
   return (
     <>
-    <section className='grid gap-6 p-4 auto-rows-auto grid-cols-[repeat(auto-fill,_minmax(220px,_1fr))]'>
+    <section className='grid gap-6 p-4 auto-rows-auto grid-cols-[repeat(auto-fill,_minmax(220px,_1fr))] max-w-[1000px] mx-auto'>
       {residents?.slice(startCut,endtCut).map((resident) => (
       <Residents key={resident} resident={resident}></Residents>
       ))}
